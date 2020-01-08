@@ -1,7 +1,6 @@
 import ReactReconciler from 'react-reconciler';
 import hostConfig, { eventHandler } from './render/hostConfig';
 import registerComponent from './render/registerComponent';
-import { version } from '../package';
 import './components/index';
 
 const reconciler = ReactReconciler(hostConfig);
@@ -11,7 +10,7 @@ eventHandler.batchedUpdates = fn => reconciler.batchedUpdates(fn);
 reconciler.injectIntoDevTools({
   findFiberByHostInstance: reconciler.findFiberByHostInstance,
   bundleType: 1,
-  version,
+  version: '0.1.0',
   rendererPackageName: 'react-pixi-layer',
 });
 

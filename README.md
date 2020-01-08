@@ -3,6 +3,22 @@
 
 render pixi elements by layers to improve render performance
 
+[![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: http://img.shields.io/npm/v/react-pixi-layer.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/react-pixi-layer
+[travis-image]: https://img.shields.io/travis/yiminghe/react-pixi-layer.svg?style=flat-square
+[travis-url]: https://travis-ci.org/yiminghe/react-pixi-layer
+[coveralls-image]: https://img.shields.io/coveralls/yiminghe/react-pixi-layer.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/yiminghe/react-pixi-layer?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium/yiminghe/react-pixi-layer.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/yiminghe/react-pixi-layer
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[node-url]: http://nodejs.org/download/
+[download-image]: https://img.shields.io/npm/dm/react-pixi-layer.svg?style=flat-square
+[download-url]: https://npmjs.org/package/react-pixi-layer
+
 ## demo 
 
 http://yiminghe.me/react-pixi-layer/
