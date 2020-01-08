@@ -3,7 +3,9 @@
 
 render pixi elements by layers to improve render performance
 
-## demo code
+## demo 
+
+http://yiminghe.me/react-pixi-layer/
 
 ```js
 import { asyncRenderApp, render } from 'react-pixi-layer';
