@@ -1,0 +1,77 @@
+{
+  "name": "react-pixi-layer",
+  "version": "2.0.4",
+  "description": "react-pixi-layer",
+  "keywords": [
+    "react-pixi-layer"
+  ],
+  "homepage": "http://github.com/yiminghe/react-pixi-layer",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yiminghe/react-pixi-layer.git"
+  },
+  "bugs": {
+    "url": "http://github.com/yiminghe/react-pixi-layer/issues"
+  },
+  "license": "MIT",
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "pika-plugin-build-web-babel"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "pika-plugin-clean-dist-src"
+      ]
+    ]
+  },
+  "scripts": {
+    "prettier": "prettier --write \"{src,stories}/**/*.{js,tsx}\"",
+    "start": "start-storybook -p 6006",
+    "pub": "npm run build && npm publish pkg && git push",
+    "build": "pack build",
+    "deploy": "storybook-to-ghpages",
+    "lint-staged": "lint-staged"
+  },
+  "devDependencies": {
+    "@pika/plugin-build-node": "0.6.x",
+    "@pika/plugin-build-types": "0.6.x",
+    "@pika/plugin-standard-pkg": "0.6.x",
+    "@pika/types": "0.6.x",
+    "@storybook/react": "^5.1.9",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-loader": "^8.0.6",
+    "lint-staged": "^9.2.1",
+    "pika-plugin-build-web-babel": "0.6.x",
+    "pika-plugin-clean-dist-src": "^0.1.1",
+    "pixi.js": "^5.2.0",
+    "pre-commit": "1.x",
+    "prettier": "^1.18.2",
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "lint-staged": {
+    "*.{tsx,js,jsx,ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "dependencies": {
+    "lodash.set": "^4.3.2",
+    "react-reconciler": "^0.24.0"
+  }
+}
